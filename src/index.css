@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-heading: cursive;
+  --font-cursive: "Tangerine";
+}
+
+@layer utilities {
+    .font-heading{
+        font-family: var(--font-heading);
+    }
+    .font-cursive{
+        font-family: var(--font-cursive);
+    }
+}
+
+.loginimage{
+    width: 250px;
+}
+
+
+/* for sm: */
+@media (max-width: 640px) {
+    .loginimage{
+        width: 125px;
+    }
+
+    .heart1{
+        width: 100px;
+        height: 100px;
+        background-color: #FF1C00;
+        position: relative;
+        transform: rotate(135deg);
+        opacity: 0;
+        animation-name: myani1;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    .heart1::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #FF1C00;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateY(50%);
+    }
+
+    .heart1::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #FF1C00;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(-50%);
+    }
+
+    @keyframes myani1 {
+        from{
+            opacity: 1;
+            top: 0;
+        }
+        to{
+            opacity: 0;
+            top: 100%;
+        }
+    }
+
+    .heart1:nth-child(1){
+        width: 10px;
+        height: 10px;
+        left: 90%;
+        animation-delay: 1s;
+    }
+
+    .heart1:nth-child(2){
+        width: 15px;
+        height: 15px;
+        left: 10%;
+        animation-delay: 5s;
+    }
+
+    .heart1:nth-child(3){
+        width: 20px;
+        height: 20px;
+        left: 80%;
+        animation-delay: 3s;
+    }
+
+    .heart1:nth-child(4){
+        width: 25px;
+        height: 25px;
+        left: 20%;
+        animation-delay: 2s;
+    }
+
+    .heart1:nth-child(5){
+        width: 30px;
+        height: 30px;
+        left: 35%;
+        animation-delay: 1s;
+    }
+
+    .heart1:nth-child(6){
+        width: 35px;
+        height: 35px;
+        left: 75%;
+        animation-delay: 2s;
+    }
+
+    .heart1:nth-child(7){
+        width: 40px;
+        height: 40px;
+        left: 25%;
+        animation-delay: 3s;
+    }
+
+    .heart1:nth-child(8){
+        width: 20px;
+        height: 20px;
+        left:65%;
+        animation-delay: 4s;
+    }
+
+    .heart1:nth-child(9){
+        width: 25px;
+        height: 25px;
+        left: 45%;
+        animation-delay: 4s;
+    }
+
+    .heart1:nth-child(10){
+        width: 15px;
+        height: 15px;
+        left: 50%;
+        animation-delay: 2.5s;
+    }
+}
+
+
+/* for md: */
+@media (min-width: 640px) {
+    .heart{
+        width: 100px;
+        height: 100px;
+        background-color: #FF1C00;
+        position: relative;
+        transform: rotate(135deg);
+        opacity: 0;
+        animation-name: myani;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    .heart::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #FF1C00;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateY(50%);
+    }
+
+    .heart::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #FF1C00;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(-50%);
+    }
+
+    @keyframes myani {
+        from{
+            opacity: 1;
+            top: 0;
+        }
+        to{
+            opacity: 0;
+            top: 100%;
+        }
+    }
+
+    .heart:nth-child(1){
+        width: 10px;
+        height: 10px;
+        left: 90%;
+        animation-delay: 1s;
+    }
+
+    .heart:nth-child(2){
+        width: 15px;
+        height: 15px;
+        left: 10%;
+        animation-delay: 5s;
+    }
+
+    .heart:nth-child(3){
+        width: 20px;
+        height: 20px;
+        left: 80%;
+        animation-delay: 3s;
+    }
+
+    .heart:nth-child(4){
+        width: 25px;
+        height: 25px;
+        left: 20%;
+        animation-delay: 2s;
+    }
+
+    .heart:nth-child(5){
+        width: 30px;
+        height: 30px;
+        left: 35%;
+        animation-delay: 1s;
+    }
+
+    .heart:nth-child(6){
+        width: 35px;
+        height: 35px;
+        left: 75%;
+        animation-delay: 2s;
+    }
+
+    .heart:nth-child(7){
+        width: 40px;
+        height: 40px;
+        left: 25%;
+        animation-delay: 3s;
+    }
+
+    .heart:nth-child(8){
+        width: 20px;
+        height: 20px;
+        left:65%;
+        animation-delay: 4s;
+    }
+
+    .heart:nth-child(9){
+        width: 25px;
+        height: 25px;
+        left: 45%;
+        animation-delay: 4s;
+    }
+
+    .heart:nth-child(10){
+        width: 15px;
+        height: 15px;
+        left: 50%;
+        animation-delay: 2.5s;
+    }
+
+
+    .heart1{
+        width: 100px;
+        height: 100px;
+        background-color: #FF1C00;
+        position: relative;
+        transform: rotate(135deg);
+        opacity: 0;
+        animation-name: myani1;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    .heart1::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #FF1C00;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateY(50%);
+    }
+
+    .heart1::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #FF1C00;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(-50%);
+    }
+
+    @keyframes myani1 {
+        from{
+            opacity: 1;
+            top: 0;
+        }
+        to{
+            opacity: 0;
+            top: 100%;
+        }
+    }
+
+    .heart1:nth-child(1){
+        width: 10px;
+        height: 10px;
+        left: 90%;
+        animation-delay: 1s;
+    }
+
+    .heart1:nth-child(2){
+        width: 15px;
+        height: 15px;
+        left: 10%;
+        animation-delay: 5s;
+    }
+
+    .heart1:nth-child(3){
+        width: 20px;
+        height: 20px;
+        left: 80%;
+        animation-delay: 3s;
+    }
+
+    .heart1:nth-child(4){
+        width: 25px;
+        height: 25px;
+        left: 20%;
+        animation-delay: 2s;
+    }
+
+    .heart1:nth-child(5){
+        width: 30px;
+        height: 30px;
+        left: 35%;
+        animation-delay: 1s;
+    }
+
+    .heart1:nth-child(6){
+        width: 35px;
+        height: 35px;
+        left: 75%;
+        animation-delay: 2s;
+    }
+
+    .heart1:nth-child(7){
+        width: 40px;
+        height: 40px;
+        left: 25%;
+        animation-delay: 3s;
+    }
+
+    .heart1:nth-child(8){
+        width: 20px;
+        height: 20px;
+        left:65%;
+        animation-delay: 4s;
+    }
+
+    .heart1:nth-child(9){
+        width: 25px;
+        height: 25px;
+        left: 45%;
+        animation-delay: 4s;
+    }
+
+    .heart1:nth-child(10){
+        width: 15px;
+        height: 15px;
+        left: 50%;
+        animation-delay: 2.5s;
+    }
+}
