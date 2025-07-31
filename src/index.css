@@ -1,17 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-heading: cursive;
-  --font-cursive: "Tangerine";
+  --font-heading: "Comic Neue";
 }
 
 @layer utilities {
     .font-heading{
         font-family: var(--font-heading);
-    }
-    .font-cursive{
-        font-family: var(--font-cursive);
+        font-weight: 700;
     }
 }
 
